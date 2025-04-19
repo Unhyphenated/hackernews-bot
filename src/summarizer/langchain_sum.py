@@ -12,7 +12,7 @@ class ArticleSummarizer:
         """Initialize the summarizer with OpenAI API key."""
         self.llm = OpenAI(
             temperature=0.5,
-            model_name="gpt-3.5-turbo",
+            model_name="gpt-4o-mini",
             openai_api_key=openai_api_key
         )
         self.chain = load_summarize_chain(self.llm, chain_type="stuff")

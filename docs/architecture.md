@@ -24,7 +24,7 @@ flowchart TB
             SES[AWS SES<br>Email Service] -.->|Templated<br>HTML emails| L3
         end
         
-        OpenAI[OpenAI API<br>GPT-4-mini] -.->|$0.15/M tokens<br>Optimized prompts| L2
+        OpenAI[OpenAI API<br>GPT-4o-mini] -.->|$0.15/M tokens<br>Optimized prompts| L2
     end
     
     User((User)) -->|Receives every<br>3 days| Email[Email Digest<br><br>Top 3 articles<br>with summaries]
